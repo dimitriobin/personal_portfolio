@@ -4,10 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Dimitri Obin - Web developper</title>
 </head>
 <body>
-    <h1>Dimitri Obin - Developper Web</h1>
+    <header>
+        <div class="menu-btn">
+          <span class="menu-btn__burger"></span>
+        </div>
+
+        <nav class="nav">
+          <ul class="menu-nav">
+            <li class="menu-nav__item active">
+              <a href="index.html" class="menu-nav__link">
+                Projets
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="about.html" class="menu-nav__link">
+                A propos
+              </a>
+            </li>
+            <li class="menu-nav__item">
+              <a href="contact.html" class="menu-nav__link">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main>
+      <section class="home">
+        <h2>Hi! My name is</h2>
+        <h1 class="home__name">
+          Dimitri <span class="home__name--last">Obin</span>
+        </h1>
+        <h2>
+          Web Developer Junior
+        </h2>
+
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github fa-2x"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+
+        <footer>&copy; Copyright 2021</footer>
+      </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/acd1cf4284.js" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
     
 </body>
 </html>
