@@ -1,0 +1,49 @@
+@use '../abstracts/variables' as v;
+
+body {
+  background-color: v.$color-primary;
+  color: v.$font-color;
+  font-family: v.$font-text;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: v.$font-title;
+}
+
+h1 {
+  font-size: 3.9rem;
+  font-weight: 300;
+  letter-spacing: -0.03rem;
+}
+
+h2 {
+  font-size: 3.1rem;
+  font-weight: 400;
+  letter-spacing: 0rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  letter-spacing: 0.01rem;
+}
+
+button {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08rem;
+  font-variant-caps: all-small-caps;
+}
+
+a {
+  color: v.$font-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
