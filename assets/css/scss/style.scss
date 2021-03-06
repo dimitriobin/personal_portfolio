@@ -7,10 +7,10 @@
 @use './base/fonts';
 @use './base/base';
 
-@use './layout/navigation';
+@use './layout/menu';
 @use './layout/header';
 
-// @use './components/buttons';
+@use './components/burger';
 
 @use './pages/home';
 @use './pages/contact';
