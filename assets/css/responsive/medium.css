@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px) {
+  .nav {
+    position: static;
+    width: auto;
+    opacity: 1;
+    visibility: visible;
+    margin: 4rem;
+  }
+  .nav .menu-nav {
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    overflow: hidden;
+    background-color: transparent;
+    list-style: none;
+    padding-right: 0;
+    transform: translateY(0);
+  }
+  .nav .menu-nav__item {
+    transform: translateX(0);
+    text-decoration: none;
+    height: 30px;
+    position: relative;
+  }
+  .nav .menu-nav__item.active > a {
+    color: #ffa600;
+  }
+  .nav .menu-nav__link {
+    display: initial;
+    color: black;
+    text-transform: initial;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0 1.5rem;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+  }
+  .nav .menu-nav__link::after {
+    position: absolute;
+    bottom: -12%;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: #ffa600;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav .menu-nav__link:hover::after {
+    width: 100%;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=medium.css.map */
