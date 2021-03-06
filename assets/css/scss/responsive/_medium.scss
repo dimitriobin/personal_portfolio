@@ -3,6 +3,8 @@
 
 @include media-md {
   .nav {
+    position: absolute;
+    right: 0;
     width: auto;
     opacity: 1;
     visibility: visible;

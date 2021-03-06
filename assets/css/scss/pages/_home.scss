@@ -104,11 +104,7 @@
 
 .project {
   text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 5rem;
 
   &-title {
     font-weight: 500;
@@ -141,7 +137,7 @@
     text-align: left;
     list-style-type: disc;
     padding: 0 5%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     &__item {
       margin-top: 5px;
     }

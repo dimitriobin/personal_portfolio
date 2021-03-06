@@ -419,11 +419,7 @@ strong {
 
 .project {
   text-align: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 5rem;
 }
 .project-title {
   font-weight: 500;
@@ -452,7 +448,7 @@ strong {
   text-align: left;
   list-style-type: disc;
   padding: 0 5%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 .project-features__item {
   margin-top: 5px;
@@ -482,6 +478,8 @@ strong {
 
 @media screen and (min-width: 768px) {
   .nav {
+    position: absolute;
+    right: 0;
     width: auto;
     opacity: 1;
     visibility: visible;
