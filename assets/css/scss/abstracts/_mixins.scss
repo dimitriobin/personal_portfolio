@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+// Transitions
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+// Responsive
+@mixin media-md {
+  @media screen and (min-width: $breakpoint-md) {
+    @content;
+  }
+}
