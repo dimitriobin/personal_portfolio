@@ -129,13 +129,33 @@ table {
   border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: white;
   color: black;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  height: 50px;
+  font-size: 0.9rem;
+  width: 100vw;
+  padding: 0 5%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -183,7 +203,7 @@ a:hover {
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   width: 100vw;
   opacity: 0.9;
   visibility: hidden;
@@ -239,8 +259,8 @@ a:hover {
 .menu-btn {
   position: absolute;
   z-index: 1;
-  right: 1rem;
-  top: 1rem;
+  right: 2rem;
+  top: 2rem;
   height: 30px;
   width: 30px;
   border: none;
@@ -297,9 +317,81 @@ a:hover {
   outline: none;
 }
 
+.home {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+.home-intro {
+  text-align: center;
+}
+.home-intro__heading {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+.home-intro__heading span {
+  color: #ffa600;
+}
+.home-intro__subheading {
+  text-transform: none;
+  color: black !important;
+  opacity: 0.7;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.home-intro__text {
+  line-height: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.home-intro__text > a {
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+}
+.home-intro__text > a:hover {
+  color: #ffa600;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.home-intro__resume {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 1px solid #ffa600;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.home-intro__resume:hover {
+  background-color: #ffa600;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.5s ease-in-out;
+}
+.home-intro > .social-icons {
+  margin-top: 1.5rem;
+}
+.home-intro > .social-icons > a {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.home-intro > .social-icons > a > i {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.home-intro > .social-icons > a:hover > i {
+  color: #ffa600;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
-    position: static;
     width: auto;
     opacity: 1;
     visibility: visible;
