@@ -38,26 +38,67 @@
     </header>
 
     <main>
-      <section class="home">
-        <header class="home-intro">
-          <h1 class="home-intro__heading">Dimitri <span>Obin</span></h1>
-          <h2 class="home-intro__subheading">Développeur web junior</h2>
-          <p class="home-intro__text">Vous trouverez sur cette page mes meilleures réalisations,
+      <section class="intro">
+          <h1 class="intro__heading">Dimitri <span>Obin</span></h1>
+          <h2 class="intro__subheading">Développeur web junior</h2>
+          <p class="intro__text">Vous trouverez sur cette page mes meilleures réalisations,
             <br> pour en savoir plus sur moi <a href="./pages/about.html">cliquez ici</a>.</p>
-          <button class="home-intro__resume">charger mon CV</button>
+          <button class="intro__resume">charger mon CV</button>
           <div class="social-icons">
-            <a href="https://github.com/dimitriobin" target="_blank">
+            <a href="https://github.com/dimitriobin" target="_blank" aria-label="Visiter le profil github">
               <i class="fab fa-github fa-2x"></i>
             </a>
-            <a href="https://www.linkedin.com/in/dimitri-obin/" target="_blank">
+            <a href="https://www.linkedin.com/in/dimitri-obin/" target="_blank" aria-label="Visiter le profil linkedin">
               <i class="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="#">
+            <a href="#" aria-label="Me contacter">
               <i class="far fa-envelope fa-2x"></i>
             </a>
           </div>
-        </header>
+          <a class="scroll-btn" href="#projectOne" aria-hidden="true">
+            <i class="fas fa-chevron-down fa-2x"></i>
+          </a>
       </section>
+      <article id="projectOne" class="project">
+        <h3 class="project-title">Réseau social d'entreprise</h3>
+        <img src="./assets/img/responsive-design-presentation.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+
+        <h4 class="sr-only">Caractéristiques techniques</h4>
+        <ul class="project-stack">
+          <li class="project-stack__item">HTML5</li>
+          <li class="project-stack__item">CSS3</li>
+          <li class="project-stack__item">Javascript</li>
+          <li class="project-stack__item">Vue.js</li>
+          <li class="project-stack__item">Node.js</li>
+          <li class="project-stack__item">MySQL</li>
+          <li class="project-stack__item">Sequelize ORM</li>
+          <li class="project-stack__item">Bootstrap 3</li>
+        </ul>
+        
+        <h4 class="sr-only">Besoins du projet</h4>
+        <p class="project-brief">
+          Pour ce projet, le besoin était de créer un espace où les employés d'une même entreprise peuvent 
+          créer et partager du contenu sur des sujets qui les intéressent. J'ai choisi d'intégrer en plus une messagerie instantanée.
+        </p>
+
+        <h4 class="sr-only">Fonctionnalités majeures</h4>
+        <ul class="project-features">
+          <li class="project-features__item"><strong>API REST</strong> sécurisée qui permet de créer, lire, modifier et supprimer du contenu</li>
+          <li class="project-features__item">base de données <strong>SQL</strong></li>
+          <li class="project-features__item">gestion de comptes d'utilisateurs</li>
+          <li class="project-features__item">gestion de sessions utilisateurs grâce aux <strong>jsonwebtokens</strong></li>
+          <li class="project-features__item">Single Wep Application</li>
+          <li class="project-features__item">messagerie instantanée utilisant les <strong>WebSockets</strong></li>
+        </ul>
+        <div class="project-links">
+          <a href="#" class="project-links__item"><i class="fab fa-github fa-1x"></i> code source</a>
+          <a href="#" class="project-links__item"><i class="fas fa-desktop fa-1x"></i> live demo</a>
+        </div>
+      </article>
+      <article class="project">
+        <h3>Salut</h3>
+        <p>c'est un test</p>
+      </article>
     </main>
     <footer>
       &copy; Copyright 2021

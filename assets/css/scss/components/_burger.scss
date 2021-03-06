@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as *;
 
 .menu-btn {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   right: 2rem;
   top: 2rem;
