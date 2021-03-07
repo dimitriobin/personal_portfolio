@@ -145,7 +145,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
 }
 
@@ -418,21 +418,27 @@ strong {
 }
 
 .project {
-  text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.project-title {
-  font-weight: 500;
-}
-.project > img {
-  width: 90%;
+.project-img {
+  width: 100%;
   max-width: 800px;
   height: auto;
+  align-self: center;
 }
-.project-stack {
+.project-title {
+  font-size: 1.6rem;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
-.project-stack__item {
+.project-body-stack {
+  margin-bottom: 1rem;
+}
+.project-body-stack__item {
   display: inline-block;
   font-size: 0.8rem;
   color: #ffa600;
@@ -441,39 +447,44 @@ strong {
   border-radius: 15px;
   margin: 0.1rem 0;
 }
-.project-brief {
-  margin-bottom: 1rem;
+.project-body-brief {
+  margin: 1rem 0;
 }
-.project-features {
+.project-body-features {
   text-align: left;
   list-style-type: disc;
   padding: 0 5%;
+  margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
-.project-features__item {
+.project-body-features__item {
   margin-top: 5px;
 }
-.project-links {
+.project-footer {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
-.project-links > a {
-  font-size: 1.2rem;
+.project-footer__link {
+  font-size: 1rem;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0.5rem 1rem;
-  margin: 0 0.5rem;
+  margin: 0 0.5rem 0.2rem;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
-.project-links > a:hover {
+.project-footer__link:hover {
   color: white;
   background-color: #ffa600;
   transform: scale(1.1);
   border-color: #ffa600;
   transition: all 0.5s ease-in-out;
+}
+.project-footer__link > span {
+  margin-left: 0.3rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -533,6 +544,22 @@ strong {
 
   .menu-btn {
     display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .project {
+    margin-bottom: 5rem;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .project-img {
+    width: 50%;
+  }
+  .project > div {
+    width: 50%;
+  }
+  .project-title {
+    font-size: 2rem;
   }
 }
 
