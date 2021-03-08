@@ -10,20 +10,20 @@ body {
   font-family: v.$font-text;
   font-size: 1rem;
   font-weight: 400;
-  min-height: 100vh;
   padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  min-height: 100vh;
+  max-width: 1600px;
   margin: auto;
 }
 
 footer {
   height: 50px;
   font-size: 0.9rem;
-  width: 100vw;
+  width: 100%;
   padding: 0 5%;
   text-align: center;
   display: flex;
@@ -69,10 +69,6 @@ button {
 a {
   color: v.$font-color;
   text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 strong {
