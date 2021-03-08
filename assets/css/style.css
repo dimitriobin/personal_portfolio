@@ -168,19 +168,20 @@ h3 {
 
 h1 {
   font-size: 3.9rem;
-  font-weight: 300;
+  font-weight: 700;
   letter-spacing: -0.03rem;
 }
 
 h2 {
   font-size: 3.1rem;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 0rem;
 }
 
 h3 {
   font-size: 2.25rem;
   letter-spacing: 0.01rem;
+  font-weight: 500;
 }
 
 h4 {
@@ -345,9 +346,9 @@ strong {
 .intro__subheading {
   text-transform: none;
   color: black !important;
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 .intro__text {
@@ -430,7 +431,7 @@ strong {
 }
 .project-title {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 900;
   margin-bottom: 1rem;
 }
 .project-body-stack {
@@ -484,6 +485,10 @@ strong {
   margin-left: 0.3rem;
 }
 
+.about h1 {
+  margin-bottom: 3rem;
+  font-weight: 900;
+}
 .about p {
   margin-top: 1rem;
   line-height: 1.2;

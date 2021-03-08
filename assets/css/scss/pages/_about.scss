@@ -2,6 +2,11 @@
 @use '../abstracts/mixins' as *;
 
 .about {
+  h1 {
+    margin-bottom: 3rem;
+    font-weight: 900;
+  }
+
   p {
     margin-top: 1rem;
     line-height: 1.2;
