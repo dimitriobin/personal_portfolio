@@ -484,6 +484,43 @@ strong {
   margin-left: 0.3rem;
 }
 
+.about p {
+  margin-top: 1rem;
+  line-height: 1.2;
+}
+.about .about__resume {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  background-color: transparent;
+  border: 1px solid #ffa600;
+  border-radius: 15px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+.about .about__resume:hover {
+  background-color: #ffa600;
+  color: white;
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+}
+.about .social-icons > a {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+.about .social-icons > a > i {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
+}
+.about .social-icons > a > i:hover {
+  color: #ffa600;
+  transform: scale(1.15);
+  transition: all 0.4s ease-in-out;
+}
+
 @media screen and (min-width: 768px) {
   .nav {
     position: absolute;

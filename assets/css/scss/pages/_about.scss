@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.about {
+  p {
+    margin-top: 1rem;
+    line-height: 1.2;
+  }
+
+  .about__resume {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 1.5rem 0;
+    background-color: transparent;
+    border: 1px solid $color-secondary;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    @include transition-ease;
+
+    &:hover {
+      background-color: $color-secondary;
+      color: $color-primary;
+      transform: scale(1.05);
+      @include transition-ease;
+    }
+  }
+
+  .social-icons > a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    & > i {
+      transform: scale(1);
+      @include transition-ease;
+
+      &:hover {
+        color: $color-secondary;
+        transform: scale(1.15);
+        @include transition-ease;
+      }
+    }
+  }
+}
