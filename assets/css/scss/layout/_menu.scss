@@ -6,8 +6,9 @@
   top: 0;
   right: 0;
   width: 100vw;
-  opacity: 0.9;
+  opacity: 0.98;
   visibility: hidden;
+  z-index: 10;
 
   &.open {
     visibility: visible;

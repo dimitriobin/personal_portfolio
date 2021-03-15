@@ -10,14 +10,12 @@ body {
   font-family: v.$font-text;
   font-size: 1rem;
   font-weight: 400;
-  padding: 0 5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  max-width: 1600px;
-  margin: auto;
+  padding: 0 5%;
 }
 
 footer {

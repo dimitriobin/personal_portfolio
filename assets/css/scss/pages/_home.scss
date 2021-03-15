@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__heading {
     text-transform: uppercase;
@@ -85,10 +86,7 @@
 }
 
 .scroll-btn {
-  position: absolute;
-  bottom: 10vh;
-  left: 50%;
-  transform: translate(-50%);
+  margin-top: 3rem;
   @include transition-ease;
 
   & > i {
@@ -105,6 +103,7 @@
 
 .project {
   margin-bottom: 3rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -112,7 +111,6 @@
 
   &-img {
     width: 100%;
-    max-width: 800px;
     height: auto;
     align-self: center;
   }
