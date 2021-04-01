@@ -1,69 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/prefixed/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/prefixed/style.css" />
     <title>Dimitri Obin - Web developper</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <button class="menu-btn">
-          <span class="sr-only">Ouvrir le menu</span>
-          <span class="menu-btn__burger" aria-hidden="true"></span>
-        </button>
+      <button class="menu-btn">
+        <span class="sr-only">Ouvrir le menu</span>
+        <span class="menu-btn__burger" aria-hidden="true"></span>
+      </button>
 
-        <nav class="nav">
-          <ul class="menu-nav">
-            <li class="menu-nav__item active">
-              <a href="index.html" class="menu-nav__link">
-                Projets
-              </a>
-            </li>
-            <li class="menu-nav__item">
-              <a href="./pages/about.html" class="menu-nav__link">
-                A propos
-              </a>
-            </li>
-            <li class="menu-nav__item">
-              <a href="mailto:dimitriobin@gmail.com" target="_blank" class="menu-nav__link">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item active">
+            <a href="index.html" class="menu-nav__link"> Projets </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="./pages/about.html" class="menu-nav__link"> A propos </a>
+          </li>
+          <li class="menu-nav__item">
+            <a
+              href="mailto:dimitriobin@gmail.com"
+              target="_blank"
+              class="menu-nav__link"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="home">
-        <section class="intro">
-          <h1 class="intro__heading">Dimitri <span>Obin</span></h1>
-          <h2 class="intro__subheading">Développeur web junior</h2>
-          <p class="intro__text">Vous trouverez sur cette page mes meilleures réalisations,
-            <br> pour en savoir plus sur moi <a href="./pages/about.html">cliquez ici</a>.</p>
-          <!-- Download Resume -->
-          <a href="./assets/pdf/CV_dimitri_obin.pdf" class="intro__resume" download aria-label="Télécharger mon CV au format PDF">mon CV</a>
-          <div class="social-icons">
-            <a href="https://github.com/dimitriobin" target="_blank" aria-label="Visiter le profil github">
-              <i class="fab fa-github fa-2x"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/dimitri-obin/" target="_blank" aria-label="Visiter le profil linkedin">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="mailto:dimitriobin@gmail.com" target="_blank" aria-label="Me contacter">
-              <i class="far fa-envelope fa-2x"></i>
-            </a>
-          </div>
-          <a class="scroll-btn" href="#projectOne" aria-hidden="true">
-            <i class="fas fa-chevron-down fa-2x"></i>
+      <section class="intro">
+        <h1 class="intro__heading">Dimitri <span>Obin</span></h1>
+        <h2 class="intro__subheading">Développeur web junior</h2>
+        <p class="intro__text">
+          Vous trouverez sur cette page mes meilleures réalisations, <br />
+          pour en savoir plus sur moi
+          <a href="./pages/about.html">cliquez ici</a>.
+        </p>
+        <!-- Download Resume -->
+        <a
+          href="./assets/pdf/CV_dimitri_obin.pdf"
+          class="intro__resume"
+          download
+          aria-label="Télécharger mon CV au format PDF"
+          >mon CV</a
+        >
+        <div class="social-icons">
+          <a
+            href="https://github.com/dimitriobin"
+            target="_blank"
+            aria-label="Visiter le profil github"
+          >
+            <i class="fab fa-github fa-2x"></i>
           </a>
+          <a
+            href="https://www.linkedin.com/in/dimitri-obin/"
+            target="_blank"
+            aria-label="Visiter le profil linkedin"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a
+            href="mailto:dimitriobin@gmail.com"
+            target="_blank"
+            aria-label="Me contacter"
+          >
+            <i class="far fa-envelope fa-2x"></i>
+          </a>
+        </div>
+        <a class="scroll-btn" href="#projectOne" aria-hidden="true">
+          <i class="fas fa-chevron-down fa-2x"></i>
+        </a>
       </section>
 
       <!-- Projet 7 Openclassrooms -->
       <article id="projectOne" class="project">
-        <img class="project-img" src="./assets/img/responsive-design-p7.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+        <img
+          class="project-img"
+          src="./assets/img/responsive-design-p7.jpg"
+          alt="Voici le projet qui s'affiche sur plusieurs écrans différents"
+        />
         <div>
           <h3 class="project-title">Réseau social d'entreprise</h3>
           <div class="project-body">
@@ -76,75 +104,162 @@
               <li class="project-body-stack__item">Node.js</li>
               <li class="project-body-stack__item">MySQL</li>
               <li class="project-body-stack__item">Sequelize ORM</li>
+              <li class="project-body-stack__item">AWS S3</li>
               <li class="project-body-stack__item">Bootstrap 4</li>
             </ul>
-            
+
             <h4>Besoins du projet</h4>
             <p class="project-body-brief">
-              Pour ce projet, le besoin était de créer un espace où les employés d'une même entreprise peuvent 
-              créer et partager du contenu sur des sujets qui les intéressent. J'ai choisi d'intégrer en plus une messagerie instantanée.
+              Pour ce projet, le besoin était de créer un espace où les employés
+              d'une même entreprise peuvent créer et partager du contenu sur des
+              sujets qui les intéressent. J'ai choisi d'intégrer en plus une
+              messagerie instantanée.
             </p>
 
             <h4>Fonctionnalités majeures</h4>
             <ul class="project-body-features">
-              <li class="project-body-features__item"><strong>API REST</strong> sécurisée qui permet de créer, lire, modifier et supprimer du contenu</li>
-              <li class="project-body-features__item">base de données <strong>SQL</strong></li>
-              <li class="project-body-features__item">gestion de comptes d'utilisateurs</li>
-              <li class="project-body-features__item">gestion de sessions utilisateurs grâce aux <strong>jsonwebtokens</strong></li>
-              <li class="project-body-features__item">Single Wep Application</li>
-              <li class="project-body-features__item">messagerie instantanée utilisant les <strong>WebSockets</strong></li>
-              <li class="project-body-features__item">Pagination et chargement au scroll des éléments</li>
+              <li class="project-body-features__item">
+                <strong>API REST</strong> sécurisée qui permet de créer, lire,
+                modifier et supprimer du contenu
+              </li>
+              <li class="project-body-features__item">
+                base de données <strong>SQL</strong>
+              </li>
+              <li class="project-body-features__item">
+                gestion de comptes d'utilisateurs
+              </li>
+              <li class="project-body-features__item">
+                gestion de sessions utilisateurs grâce aux
+                <strong>jsonwebtokens</strong>
+              </li>
+              <li class="project-body-features__item">
+                Single Wep Application
+              </li>
+              <li class="project-body-features__item">
+                messagerie instantanée utilisant les <strong>WebSockets</strong>
+              </li>
+              <li class="project-body-features__item">
+                Pagination et chargement au scroll des éléments
+              </li>
             </ul>
           </div>
           <div class="project-footer">
-            <a href="https://github.com/dimitriobin/P07-Groupomania" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x" aria-label="Voir le code source"></i> <span>code source</span></a>
-            <a href="https://p07-groupomania.herokuapp.com" class="project-footer__link" target="_blank"><i class="fas fa-desktop fa-1x" aria-label="Voir la démonstration du projet"></i> <span>live demo</span></a>
+            <a
+              href="https://github.com/dimitriobin/P07-Groupomania"
+              class="project-footer__link"
+              target="_blank"
+              ><i
+                class="fab fa-github fa-1x"
+                aria-label="Voir le code source"
+              ></i>
+              <span>code source</span></a
+            >
+            <a
+              href="https://p07-groupomania.herokuapp.com"
+              class="project-footer__link"
+              target="_blank"
+              ><i
+                class="fas fa-desktop fa-1x"
+                aria-label="Voir la démonstration du projet"
+              ></i>
+              <span>live demo</span></a
+            >
           </div>
         </div>
       </article>
 
       <!-- Projet 6 Openclassrooms -->
       <article id="projectTwo" class="project">
-        <img class="project-img"  src="./assets/img/responsive-design-p6.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+        <img
+          class="project-img"
+          src="./assets/img/responsive-design-p6.jpg"
+          alt="Voici le projet qui s'affiche sur plusieurs écrans différents"
+        />
         <div>
-          <h3 class="project-title">API REST sécurisée</h3>
+          <h3 class="project-title">
+            Application de notation de sauces piquantes
+          </h3>
           <div class="project-body">
             <h4 class="sr-only">Caractéristiques techniques</h4>
             <ul class="project-body-stack">
               <li class="project-body-stack__item">Node.js</li>
+              <li class="project-body-stack__item">React.js</li>
+              <li class="project-body-stack__item">TailwindCSS</li>
               <li class="project-body-stack__item">MongoDB</li>
               <li class="project-body-stack__item">Mongoose ORM</li>
+              <li class="project-body-stack__item">AWS S3</li>
               <li class="project-body-stack__item">OWASP</li>
               <li class="project-body-stack__item">JWT</li>
             </ul>
-            
+
             <h4 class="sr-only">Besoins du projet</h4>
             <p class="project-brief">
-              Pour ce projet, le besoin était de créer une API sécurisée permettant de créer, lire, noter et supprimer des fiches de sauces et de pouvoir les noter et les aimer.
+              Pour ce projet, le besoin était de créer une API sécurisée
+              permettant de créer, lire, noter et supprimer des fiches de sauces
+              et de pouvoir les noter et les aimer.
             </p>
 
             <h4 class="sr-only">Fonctionnalités majeures</h4>
             <ul class="project-body-features">
-              <li class="project-body-features__item"><strong>API REST</strong> sécurisée qui permet de créer, lire, modifier et supprimer du contenu</li>
-              <li class="project-body-features__item">base de données <strong>non relationelle</strong></li>
-              <li class="project-body-features__item">gestion de comptes d'utilisateurs</li>
-              <li class="project-body-features__item">gestion de sessions utilisateurs grâce aux <strong>jsonwebtokens</strong></li>
-              <li class="project-body-features__item">Respect des recommandation de l'OWASP</li>
-              <li class="project-body-features__item">Validation des données côté serveur</li>
+              <li class="project-body-features__item">
+                <strong>API REST</strong> sécurisée qui permet de créer, lire,
+                modifier et supprimer du contenu
+              </li>
+              <li class="project-body-features__item">
+                base de données <strong>non relationelle</strong>
+              </li>
+              <li class="project-body-features__item">
+                gestion de comptes d'utilisateurs
+              </li>
+              <li class="project-body-features__item">
+                gestion de sessions utilisateurs grâce aux
+                <strong>jsonwebtokens</strong>
+              </li>
+              <li class="project-body-features__item">
+                Respect des recommandation de l'OWASP
+              </li>
+              <li class="project-body-features__item">
+                Validation des données côté serveur et client
+              </li>
+              <li class="project-body-features__item">
+                Système de like/dislike
+              </li>
             </ul>
           </div>
           <div class="project-footer">
-            <a href="https://github.com/dimitriobin/P06_so-pekocko" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x"></i> code source</a>
-            <a href="https://p06-so-peckoko-api.herokuapp.com/api/docs/" class="project-footer__link" target="_blank"><i class="fas fa-desktop fa-1x"></i> live demo</a>
+            <a
+              href="https://github.com/dimitriobin/P06_so-pekocko"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fab fa-github fa-1x"></i> code source</a
+            >
+            <a
+              href="https://p06-so-peckoko-api.herokuapp.com/api/docs/"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fas fa-desktop fa-1x"></i> API docs</a
+            >
+            <a
+              href="https://elegant-davinci-4dfe5a.netlify.app/"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fas fa-desktop fa-1x"></i> live demo</a
+            >
           </div>
         </div>
       </article>
 
       <!-- Projet 5 Openclassrooms -->
       <article id="projectThree" class="project">
-        <img class="project-img"  src="./assets/img/responsive-design-p5.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+        <img
+          class="project-img"
+          src="./assets/img/responsive-design-p5.jpg"
+          alt="Voici le projet qui s'affiche sur plusieurs écrans différents"
+        />
         <div>
-          <h3 class="project-title">Interface d'utilisateur pour une boutique e-commerce</h3>
+          <h3 class="project-title">
+            Interface d'utilisateur pour une boutique e-commerce
+          </h3>
           <div class="project-body">
             <h4 class="sr-only">Caractéristiques techniques</h4>
             <ul class="project-body-stack">
@@ -154,33 +269,61 @@
               <li class="project-body-stack__item">Javascript</li>
               <li class="project-body-stack__item">Webpack</li>
             </ul>
-            
+
             <h4 class="sr-only">Besoins du projet</h4>
             <p class="project-brief">
-              Pour ce projet, le besoin était de créer une UI respectant les standards d'accessibilité et de responsive design pour un site e-commerce.
+              Pour ce projet, le besoin était de créer une UI respectant les
+              standards d'accessibilité et de responsive design pour un site
+              e-commerce.
             </p>
 
             <h4 class="sr-only">Fonctionnalités majeures</h4>
             <ul class="project-body-features">
               <li class="project-body-features__item">requêtes AJAX</li>
-              <li class="project-body-features__item">communication avec une API tierce</li>
-              <li class="project-body-features__item">Utilisation de webpack et babel pour porter le site sur plusieurs versions des navigateurs principaux</li>
-              <li class="project-body-features__item">gestion d'une session d'utilisateur grâce au local storage du navigateur</li>
-              <li class="project-body-features__item">Respect des recommandation WCAG</li>
-              <li class="project-body-features__item">Optimisation pour le SEO</li>
+              <li class="project-body-features__item">
+                communication avec une API tierce
+              </li>
+              <li class="project-body-features__item">
+                Utilisation de webpack et babel pour porter le site sur
+                plusieurs versions des navigateurs principaux
+              </li>
+              <li class="project-body-features__item">
+                gestion d'une session d'utilisateur grâce au local storage du
+                navigateur
+              </li>
+              <li class="project-body-features__item">
+                Respect des recommandation WCAG
+              </li>
+              <li class="project-body-features__item">
+                Optimisation pour le SEO
+              </li>
               <li class="project-body-features__item">URLs dynamiques</li>
             </ul>
           </div>
           <div class="project-footer">
-            <a href="https://github.com/dimitriobin/P05_Orinoco" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x"></i> code source</a>
-            <a href="https://dimitriobin.github.io/P05_Orinoco/" class="project-footer__link" target="_blank"><i class="fas fa-desktop fa-1x"></i> live demo</a>
+            <a
+              href="https://github.com/dimitriobin/P05_Orinoco"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fab fa-github fa-1x"></i> code source</a
+            >
+            <a
+              href="https://dimitriobin.github.io/P05_Orinoco/"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fas fa-desktop fa-1x"></i> live demo</a
+            >
           </div>
         </div>
       </article>
 
       <!-- Projet 4 Openclassrooms -->
       <article id="projectFour" class="project">
-        <img class="project-img"  src="./assets/img/responsive-design-p4.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+        <img
+          class="project-img"
+          src="./assets/img/responsive-design-p4.jpg"
+          alt="Voici le projet qui s'affiche sur plusieurs écrans différents"
+        />
         <div>
           <h3 class="project-title">Optimisation d'un site web existant</h3>
           <h4 class="sr-only">Caractéristiques techniques</h4>
@@ -192,30 +335,59 @@
             <li class="project-body-stack__item">WCAG</li>
             <li class="project-body-stack__item">SEO</li>
           </ul>
-          
+
           <h4 class="sr-only">Besoins du projet</h4>
           <p class="project-brief">
-            Pour ce projet, un site un peu ancien et mal construit demandait d'être remis à jours.
+            Pour ce projet, un site un peu ancien et mal construit demandait
+            d'être remis à jours.
           </p>
 
           <h4 class="sr-only">Fonctionnalités majeures</h4>
           <ul class="project-body-features">
-            <li class="project-body-features__item">Respect des standards de l'OWASP</li>
-            <li class="project-body-features__item">Rendre accessible du contenu web</li>
-            <li class="project-body-features__item">Respect des bonne pratiques SEO</li>
-            <li class="project-body-features__item">Amélioration des performances (temps de chargement des pages, tailles des fichiers, ... )</li>
+            <li class="project-body-features__item">
+              Respect des standards de l'OWASP
+            </li>
+            <li class="project-body-features__item">
+              Rendre accessible du contenu web
+            </li>
+            <li class="project-body-features__item">
+              Respect des bonne pratiques SEO
+            </li>
+            <li class="project-body-features__item">
+              Amélioration des performances (temps de chargement des pages,
+              tailles des fichiers, ... )
+            </li>
           </ul>
           <div class="project-footer">
-            <a href="https://github.com/dimitriobin/P04_lachouetteagence-" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x"></i> code source original</a>
-            <a href="https://github.com/dimitriobin/P04_lachouetteagence_optimise-" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x"></i> code source optimisé</a>
-            <a href="https://dimitriobin.github.io/P04_lachouetteagence-/" class="project-footer__link" target="_blank"><i class="fas fa-desktop fa-1x"></i> live demo</a>
+            <a
+              href="https://github.com/dimitriobin/P04_lachouetteagence-"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fab fa-github fa-1x"></i> code source original</a
+            >
+            <a
+              href="https://github.com/dimitriobin/P04_lachouetteagence_optimise-"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fab fa-github fa-1x"></i> code source optimisé</a
+            >
+            <a
+              href="https://dimitriobin.github.io/P04_lachouetteagence-/"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fas fa-desktop fa-1x"></i> live demo</a
+            >
           </div>
         </div>
       </article>
 
       <!-- Projet 3 Openclassrooms -->
       <article id="projectFive" class="project">
-        <img class="project-img"  src="./assets/img/responsive-design-p3.jpg" alt="Voici le projet qui s'affiche sur plusieurs écrans différents">
+        <img
+          class="project-img"
+          src="./assets/img/responsive-design-p3.jpg"
+          alt="Voici le projet qui s'affiche sur plusieurs écrans différents"
+        />
         <div>
           <h3 class="project-title">Intégration et animation d'une maquette</h3>
           <h4 class="sr-only">Caractéristiques techniques</h4>
@@ -226,31 +398,44 @@
             <li class="project-body-stack__item">Autoprefixer</li>
             <li class="project-body-stack__item">Photoshop</li>
           </ul>
-          
+
           <h4 class="sr-only">Besoins du projet</h4>
           <p class="project-brief">
-            Pour ce projet, le besoin était d'intégrer au pixel prés la maquette d'une application web de plusieurs pages.
+            Pour ce projet, le besoin était d'intégrer au pixel prés la maquette
+            d'une application web de plusieurs pages.
           </p>
 
           <h4 class="sr-only">Fonctionnalités majeures</h4>
           <ul class="project-body-features">
-            <li class="project-body-features__item">animation et transitions CSS</li>
+            <li class="project-body-features__item">
+              animation et transitions CSS
+            </li>
             <li class="project-body-features__item">Responsive design</li>
           </ul>
           <div class="project-footer">
-            <a href="https://github.com/dimitriobin/P03_ohmyfood" class="project-footer__link" target="_blank"><i class="fab fa-github fa-1x"></i> code source</a>
-            <a href="https://dimitriobin.github.io/P03_ohmyfood/" class="project-footer__link" target="_blank"><i class="fas fa-desktop fa-1x"></i> live demo</a>
+            <a
+              href="https://github.com/dimitriobin/P03_ohmyfood"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fab fa-github fa-1x"></i> code source</a
+            >
+            <a
+              href="https://dimitriobin.github.io/P03_ohmyfood/"
+              class="project-footer__link"
+              target="_blank"
+              ><i class="fas fa-desktop fa-1x"></i> live demo</a
+            >
           </div>
         </div>
       </article>
     </main>
-    <footer>
-      &copy; Copyright 2021
-    </footer>
-    <script src="https://kit.fontawesome.com/acd1cf4284.js" crossorigin="anonymous"></script>
+    <footer>&copy; Copyright 2021</footer>
+    <script
+      src="https://kit.fontawesome.com/acd1cf4284.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/smooth-scroll.js"></script>
-    
-</body>
+  </body>
 </html>
